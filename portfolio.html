@@ -5,38 +5,250 @@
 
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="Styles.css" />
-    </head>
+    <!---<link rel="stylesheet" href="Styles.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <style>
+        .fa {
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            margin-right: 50px;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+            .fa:hover {
+                text-decoration: none;
+            }
+
+
+        .fa-twitter {
+            color: #55ACEE;
+            border-radius: 100%;
+        }
+
+        .fa-instagram {
+            color: #125688;
+            border-radius: 100%;
+        }
+
+        .fa-youtube {
+            color: #bb0000;
+            border-radius: 100%;
+        }
+
+
+        hr {
+            border-color: black;
+            width: 95%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            background-color: white;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .Header {
+            background: url("https://images.pexels.com/photos/917463/pexels-photo-917463.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 30px;
+            height: 400px;
+            width: 100%;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        }
+
+        .FirstName, .LastName {
+            display: block;
+            position: relative;
+            top: 80px;
+            font-weight: 900;
+            font-size: 90px;
+            color: whitesmoke;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .LastName {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .Box {
+           
+            display: inline-block;
+            
+            margin-left:20px;
+            padding: 20px 40px 40px;
+            min-width: 650px;
+            min-height: 250px;
+            text-align: left;
+           
+            
+            background-color: white;
+        }
+
+        .Selection {
+            padding: 120px;
+        }
+
+            .Selection span {
+                font-family: 'Roboto', sans-serif;
+                margin: 100px;
+                color: darkslategrey;
+            }
+
+                .Selection span:hover {
+                    color: darkgoldenrod;
+                    cursor: pointer;
+                }
+
+        .Active {
+            color: darkgoldenrod !important;
+        }
+        a
+        {
+            color:black;
+        }
+            a:hover {
+                color: darkgoldenrod;
+                text-decoration:none;
+            }
+
+
+
+        .Box h2 {
+            border-bottom: 2px solid black;
+           
+            text-align: center;
+        }
+
+        .Box h3 {
+            padding-top: 20px;
+        }
+
+        .Icon {
+            float: right;
+            font-size: 25px;
+        }
+
+        li span:hover {
+            cursor: pointer !important;
+        }
+
+        Footer {
+            display:inline-block;
+            background-color: #343a40 !important;
+        }
+        .line {
+            position:relative;
+            display:inline-block;
+            border-left: 1px solid black;
+            height: 500px;
+            float: right;
+            margin-right:50px;
+        }
+    </style>
+</head>
+
+
 
 
 <body>
 
+  
+    <div class="Header" >
+        <span class="FirstName">Ahmad Qmairah</span>
+        <span class="LastName">Computer Engineer</span>
 
-    <div class="Header">
-        <h1> Welcome To My Portfolio</h1>
-
-    </div>
-
-    <div class="Box">
-        <h2>Info</h2>
-        <h3>Name : Ahmad Qmairah</h3>
-        <h3>Email : <a href="mailto:AhmadQmairah@gmail.com">AhmadQmairah@gmail.com</a></h3>
-        <h3>GitHub : <a target="_blank" href="https://github.com/AhmadQmairah/">https://github.com/AhmadQmairah/</a></h3>
+        <div class="Selection">
+            <span class="Active" id="Nav1">About me</span>
+            <span id="Nav2">Hobbies &amp; Interests</span>
+        </div>
 
     </div>
-
-    <div class="Box">
-        <h2>Hobbies &amp; Interests </h2>
-        <h3> Programming  <span class="Icon">⌨</span></h3>
-        <h3>Playing Video Games <span class="Icon">🎮</span></h3>
-        <h3>Playing Football <span class="Icon">⚽</span></h3>
-        
-       
-
+       <div class ="Footer">
+        <a href="https://twitter.com/Ahmad_Qmairah" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/Ahmad_Qmairah/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://github.com/AhmadQmairah/" class="fa fa-github"></a>
     </div>
 
+    
+    <div class="Boxes">
+        <div class="Box " id="1">
+            <h2>About Me</h2>
+            <h3>Name : Ahmad Qmairah</h3>
+            <h3>Email : <a href="mailto:AhmadQmairah@gmail.com">AhmadQmairah@gmail.com</a></h3>
+            <h3>GitHub : <a target="_blank" href="https://github.com/AhmadQmairah/">https://github.com/AhmadQmairah/</a></h3>
+
+        </div>
+
+        <div class="Box " id="2" style=" display:none">
+            <h2>Hobbies &amp; Interests </h2>
+            <h3> Programming  <span class="Icon">⌨</span></h3>
+            <h3>Playing Video Games <span class="Icon">🎮</span></h3>
+            <h3>Playing Football <span class="Icon">⚽</span></h3>
 
 
+
+        </div>
+    </div>
+
+    
+
+ 
+
+
+
+
+    <script>
+        $(document).ready()
+        {
+            $('#Nav2').on('click', function () {
+                $("#1").fadeOut(300, () => $("#2").fadeIn(400))
+                $('#Nav1').removeClass('Active')
+                $('#Nav2').addClass('Active')
+
+
+            }
+            )
+
+
+            $('#Nav1').on('click', function () {
+                $("#2").fadeOut(300, () => $("#1").fadeIn(400))
+                $('#Nav2').removeClass('Active')
+                $('#Nav1').addClass('Active')
+
+            }
+            )
+
+        }
+    </script>
 </body>
+
+
 </html>
 
